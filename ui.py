@@ -18,9 +18,11 @@ class LocalGPTApp(ctk.CTk):
     Main Application Window
     """
 
-    def __init__(self):
+    def __init__(self, context):
+
         super().__init__()
 
+        self.context = context
         # ------------------------------------------------
         # Window
         # ------------------------------------------------
@@ -43,7 +45,10 @@ class LocalGPTApp(ctk.CTk):
         # Widgets
         # ------------------------------------------------
 
-        self.sidebar = Sidebar(self)
+        self.sidebar = Sidebar(
+            self,
+            self.context
+        )
         self.sidebar.grid(
             row=0,
             column=0,
