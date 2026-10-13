@@ -30,7 +30,7 @@ def configure_app():
     ctk.set_default_color_theme("blue")
 
 def one():
- return 0
+ pass
 
 def main():
     """
