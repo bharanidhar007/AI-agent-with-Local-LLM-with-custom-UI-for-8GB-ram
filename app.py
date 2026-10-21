@@ -11,8 +11,6 @@ import customtkinter as ctk
 
 from ui import LocalGPTApp
 
-def zero():
- return 0
 
 def configure_app():
     """
