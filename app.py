@@ -15,6 +15,10 @@ def configure_one():
  one=1
  return one
 
+def configure_zero():
+ zero=0
+ return zero
+
 def configure_app():
     """
     Configure global appearance settings.
