@@ -16,6 +16,10 @@ def configure_zero():
  zero=0
  return zero
 
+def configure_zoro():
+ 
+ return "zoro"
+
 def configure_app():
     """
     Configure global appearance settings.
