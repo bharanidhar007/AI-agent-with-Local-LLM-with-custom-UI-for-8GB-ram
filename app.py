@@ -12,9 +12,9 @@ import customtkinter as ctk
 from ui import LocalGPTApp
 
 
-def configure_zero():
- zero=0
- return zero
+def configure_one():
+ one=1
+ return one
 
 def configure_zoro():
  
