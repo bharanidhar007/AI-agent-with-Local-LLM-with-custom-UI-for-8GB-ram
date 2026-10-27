@@ -16,9 +16,6 @@ def configure_one():
  one=1
  return one
 
-def configure_zoro():
- 
- return "zoro"
 
 def configure_app():
     """
