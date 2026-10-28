@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Local Chat</title>
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+<div class="app">
+
+  <aside class="sidebar" id="sidebar">
+    <div class="side-top">
+      <button id="newChat" class="btn primary wide">＋ New chat</button>
+      <input id="search" class="search" type="search" placeholder="Search chats" autocomplete="off">
+    </div>
+    <div id="chatList" class="chat-list"></div>
+    <div class="side-bottom">
+      <button id="settingsBtn" class="btn ghost">⚙ Settings</button>
+      <button id="themeBtn" class="btn ghost" title="Toggle theme">◐</button>
+    </div>
+  </aside>
+  <div class="scrim" id="scrim"></div>
+
+  <main class="main">
+    <header class="topbar">
+      <button id="menuBtn" class="icon mobile-only" aria-label="Menu">☰</button>
+      <select id="modelSelect" title="Model"></select>
+      <button id="pullBtn" class="btn small">Get model</button>
+      <span id="status" class="status"></span>
+      <div class="spacer"></div>
+      <button id="exportBtn" class="btn small ghost" title="Download this chat as Markdown">Export</button>
+    </header>
+
+    <div id="banner" class="banner hidden"></div>
+
+    <section id="messages" class="messages">
+      <div class="inner" id="thread"></div>
+    </section>
+
+    <footer class="composer">
+      <div class="composer-box">
+        <textarea id="input" rows="1" placeholder="Message your local model…" autofocus></textarea>
+        <button id="sendBtn" class="send" title="Send">↑</button>
+      </div>
+      <div class="hint">Runs fully on your machine · Enter to send, Shift+Enter for a new line</div>
+    </footer>
+  </main>
+</div>
+
+<dialog id="settingsDlg">
+  <form method="dialog" class="dlg">
+    <h3>Settings</h3>
+    <label>System prompt
+      <textarea id="sysPrompt" rows="4" placeholder="e.g. You are a concise, helpful assistant."></textarea>
+    </label>
+    <label>Temperature: <b id="tempVal">0.7</b>
+      <input id="temp" type="range" min="0" max="1.5" step="0.1" value="0.7">
+      <small>Lower = focused and predictable, higher = more creative.</small>
+    </label>
+    <div class="dlg-actions">
+      <button class="btn ghost" value="cancel">Cancel</button>
+      <button class="btn primary" id="saveSettings" value="ok">Save</button>
+    </div>
+  </form>
+</dialog>
+
+<dialog id="pullDlg">
+  <form method="dialog" class="dlg" id="pullForm">
+    <h3>Download a model</h3>
+    <p class="muted">Pulls from the Ollama library. Anything on <a href="https://ollama.com/library" target="_blank" rel="noopener">ollama.com/library</a> works.</p>
+    <input id="pullName" placeholder="e.g. llama3.2:3b" autocomplete="off">
+    <div class="chips" id="pullChips"></div>
+    <div class="progress hidden" id="pullProgress"><div id="pullBar"></div></div>
+    <div class="muted" id="pullStatus"></div>
+    <div class="dlg-actions">
+      <button class="btn ghost" id="pullClose" value="cancel">Close</button>
+      <button class="btn primary" id="pullGo" type="button">Download</button>
+    </div>
+  </form>
+</dialog>
+
+<div id="toast" class="toast"></div>
+<script src="/app.js"></script>
+</body>
+</html>
