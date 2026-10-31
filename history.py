@@ -35,24 +35,6 @@ class HistoryManager:
 
     # --------------------------------------------------
 
-    def new_chat(self):
-
-        chat_id = str(uuid.uuid4())
-
-        data = {
-
-            "id": chat_id,
-
-            "title": "New Chat",
-
-            "created": datetime.now().isoformat(),
-
-            "updated": datetime.now().isoformat(),
-
-            "messages": []
-
-        }
-
         self.save_chat(chat_id, data)
 
         return chat_id
