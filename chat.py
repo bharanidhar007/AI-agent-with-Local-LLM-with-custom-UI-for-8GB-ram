@@ -41,19 +41,7 @@ class ChatEngine:
 
     # --------------------------------------------------
 
-    def clear_chat(self):
-
-        self.messages = []
-
-    # --------------------------------------------------
-
-    def add_user_message(self, text):
-
-        self.messages.append(
-            {
-                "role": "user",
-                "content": text
-            }
+   
         )
 
     # --------------------------------------------------
