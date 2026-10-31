@@ -7,9 +7,6 @@ Starts the CustomTkinter UI.
 ====================================================
 """
 
-import customtkinter as ctk
-
-from ui import LocalGPTApp
 
 def configure_app():
     """
