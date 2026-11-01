@@ -170,9 +170,3 @@ class ChatEngine:
                     assistant_text
 
                 )
-
-        except Exception as e:
-
-            if on_error:
-
-                on_error(str(e))
