@@ -169,17 +169,3 @@ BACKGROUND_BRIGHTNESS = 0.85
 # Drag & Drop
 # ====================================================
 
-SUPPORTED_FILES = [
-
-    ".txt",
-    ".py",
-    ".json",
-    ".md",
-    ".pdf",
-    ".docx",
-    ".png",
-    ".jpg",
-    ".jpeg",
-    ".webp"
-
-]
