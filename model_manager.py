@@ -88,12 +88,3 @@ class ModelManager:
 
     # --------------------------------------------------
 
-    def has_model(self, model_name):
-
-        return model_name in self.get_models()
-
-    # --------------------------------------------------
-
-    def refresh(self):
-
-        return self.get_models()
