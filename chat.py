@@ -93,16 +93,5 @@ class ChatEngine:
 
     # --------------------------------------------------
 
-    def _worker(
-
-        self,
-
-        on_chunk,
-
-        on_complete,
-
-        on_error
-
-    ):
-
+  
       
