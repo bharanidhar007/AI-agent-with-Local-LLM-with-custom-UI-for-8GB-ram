@@ -158,11 +158,17 @@ TEXT_BLACK = "#000000"
 # Background Image
 # ====================================================
 
-BACKGROUND_OPACITY = 0.30
+APP_NAME = "LocalGPT"
 
-BACKGROUND_BLUR = 5
+APP_VERSION = "1.0.0"
 
-BACKGROUND_BRIGHTNESS = 0.85
+WINDOW_WIDTH = 1500
+
+WINDOW_HEIGHT = 900
+
+MIN_WIDTH = 1200
+
+MIN_HEIGHT = 700
 
 
 # ====================================================
