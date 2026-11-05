@@ -36,3 +36,17 @@ def main():
     app = LocalGPTApp()
 
     app.mainloop()
+
+  def set(self, key, value):
+
+        self.settings[key] = value
+
+        self.save()
+
+    # ------------------------------------------------
+
+    def reset(self):
+
+        self.settings = DEFAULT_SETTINGS.copy()
+
+        self.save()
