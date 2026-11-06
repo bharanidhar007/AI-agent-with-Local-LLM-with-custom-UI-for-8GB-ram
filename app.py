@@ -46,3 +46,64 @@ def main():
         self.settings = DEFAULT_SETTINGS.copy()
 
         self.save()
+
+
+
+class HistoryManager:
+
+    def __init__(self):
+
+        self.chat_dir = Path(CHAT_DIR)
+
+        self.chat_dir.mkdir(
+            parents=True,
+            exist_ok=True
+        )
+
+    # --------------------------------------------------
+
+        self.save_chat(chat_id, data)
+
+        return chat_id
+
+    # --------------------------------------------------
+
+    def chat_file(self, chat_id):
+
+        return self.chat_dir / f"{chat_id}.json"
+
+    # --------------------------------------------------
+
+    def save_chat(
+
+        self,
+
+        chat_id,
+
+        data
+
+    ):
+
+        data["updated"] = datetime.now().isoformat()
+
+        with open(
+
+            self.chat_file(chat_id),
+
+            "w",
+
+            encoding="utf-8"
+
+        ) as f:
+
+            json.dump(
+
+                data,
+
+                f,
+
+                indent=4,
+
+                ensure_ascii=False
+
+            )
