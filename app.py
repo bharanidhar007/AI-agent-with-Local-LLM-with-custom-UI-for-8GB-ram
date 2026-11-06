@@ -37,11 +37,7 @@ def main():
 
     app.mainloop()
 
-  def set(self, key, value):
-
-        self.settings[key] = value
-
-        self.save()
+  
 
     # ------------------------------------------------
 
