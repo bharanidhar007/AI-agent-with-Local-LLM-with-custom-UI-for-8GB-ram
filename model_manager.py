@@ -76,15 +76,4 @@ class ModelManager:
 
     # --------------------------------------------------
 
-    def set_model(self, model_name):
-
-        self.current_model = model_name
-
-    # --------------------------------------------------
-
-    def get_model(self):
-
-        return self.current_model
-
-    # --------------------------------------------------
-
+   
