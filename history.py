@@ -230,10 +230,3 @@ class HistoryManager:
         )
 
         return chats
-
-
-def set(self, key, value):
-
-        self.settings[key] = value
-
-        self.save()
