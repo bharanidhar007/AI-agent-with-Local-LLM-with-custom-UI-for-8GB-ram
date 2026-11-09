@@ -87,28 +87,3 @@ class ChatEngine:
         on_complete,
         on_error=None
     ):
-
-        self.stop_requested = False
-
-        self.add_user_message(prompt)
-
-        thread = threading.Thread(
-
-            target=self._worker,
-
-            args=(
-                on_chunk,
-                on_complete,
-                on_error
-            ),
-
-            daemon=True
-
-        )
-
-        thread.start()
-
-    # --------------------------------------------------
-
-  
-      
