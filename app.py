@@ -74,36 +74,4 @@ class HistoryManager:
 
     # --------------------------------------------------
 
-    def save_chat(
-
-        self,
-
-        chat_id,
-
-        data
-
-    ):
-
-        data["updated"] = datetime.now().isoformat()
-
-        with open(
-
-            self.chat_file(chat_id),
-
-            "w",
-
-            encoding="utf-8"
-
-        ) as f:
-
-            json.dump(
-
-                data,
-
-                f,
-
-                indent=4,
-
-                ensure_ascii=False
-
-            )
+    
