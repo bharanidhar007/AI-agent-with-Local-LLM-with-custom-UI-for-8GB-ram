@@ -126,12 +126,3 @@ class SettingsManager:
 
             )
 
-    # ------------------------------------------------
-
-    def get(self, key, default=None):
-
-        return self.settings.get(key, default)
-
-    # ------------------------------------------------
-
-   
