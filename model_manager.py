@@ -56,24 +56,4 @@ class ModelManager:
 
             return []
 
-        try:
-
-            response = requests.get(self.url)
-
-            data = response.json()
-
-            models = []
-
-            for model in data.get("models", []):
-
-                models.append(model["name"])
-
-            return models
-
-        except Exception:
-
-            return []
-
-    # --------------------------------------------------
-
-   
+      
