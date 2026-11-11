@@ -79,11 +79,3 @@ class ChatEngine:
         self.stop_requested = True
 
     # --------------------------------------------------
-
-    def stream_chat(
-        self,
-        prompt,
-        on_chunk,
-        on_complete,
-        on_error=None
-    ):
