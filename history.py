@@ -194,20 +194,3 @@ class HistoryManager:
         )
 
     # --------------------------------------------------
-
-    def list_chats(self):
-
-        chats = []
-
-        for file in self.chat_dir.glob("*.json"):
-
-
-        chats.sort(
-
-            key=lambda x: x["updated"],
-
-            reverse=True
-
-        )
-
-        return chats
