@@ -201,25 +201,6 @@ class HistoryManager:
 
         for file in self.chat_dir.glob("*.json"):
 
-            try:
-
-                with open(
-
-                    file,
-
-                    "r",
-
-                    encoding="utf-8"
-
-                ) as f:
-
-                    data = json.load(f)
-
-                    chats.append(data)
-
-            except Exception:
-
-                pass
 
         chats.sort(
 
