@@ -48,12 +48,4 @@ class ModelManager:
 
             return False
 
-    # --------------------------------------------------
-
-    def get_models(self):
-
-        if not self.ollama_running():
-
-            return []
-
-      
+    
