@@ -155,42 +155,4 @@ class HistoryManager:
 
     # --------------------------------------------------
 
-    def add_message(
-
-        self,
-
-        chat_id,
-
-        role,
-
-        content
-
-    ):
-
-        chat = self.load_chat(chat_id)
-
-        if chat is None:
-
-            return
-
-        chat["messages"].append(
-
-            {
-
-                "role": role,
-
-                "content": content
-
-            }
-
-        )
-
-        self.save_chat(
-
-            chat_id,
-
-            chat
-
-        )
-
-    # --------------------------------------------------
+    
