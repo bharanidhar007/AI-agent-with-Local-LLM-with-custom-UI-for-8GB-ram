@@ -135,23 +135,7 @@ class HistoryManager:
 
         title
 
-    ):
-
-        chat = self.load_chat(chat_id)
-
-        if chat is None:
-
-            return
-
-        chat["title"] = title
-
-        self.save_chat(
-
-            chat_id,
-
-            chat
-
-        )
+    )
 
     # --------------------------------------------------
 
