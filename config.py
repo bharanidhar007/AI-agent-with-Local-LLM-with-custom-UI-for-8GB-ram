@@ -141,17 +141,3 @@ TYPING_SPEED = 15
 # Colors
 # ====================================================
 
-LIGHT_BACKGROUND = "#F7F7F8"
-
-DARK_BACKGROUND = "#1E1E1E"
-
-USER_BUBBLE = "#2563EB"
-
-ASSISTANT_BUBBLE = "#2B2B2B"
-
-TEXT_WHITE = "#FFFFFF"
-
-TEXT_BLACK = "#000000"
-
-========================
-
