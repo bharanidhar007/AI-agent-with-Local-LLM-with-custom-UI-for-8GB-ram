@@ -108,21 +108,5 @@ class SettingsManager:
 
             self.save()
 
-    # ------------------------------------------------
-
-    def save(self):
-
-        self.file.parent.mkdir(parents=True, exist_ok=True)
-
-        with open(self.file, "w", encoding="utf-8") as f:
-
-            json.dump(
-
-                self.settings,
-
-                f,
-
-                indent=4
-
-            )
+   
 
