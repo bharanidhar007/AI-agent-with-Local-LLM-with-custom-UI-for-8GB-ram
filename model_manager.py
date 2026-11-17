@@ -35,17 +35,3 @@ class ModelManager:
         return self.host + TAGS_ENDPOINT
 
     # --------------------------------------------------
-
-    def ollama_running(self):
-
-        try:
-
-            requests.get(self.url, timeout=2)
-
-            return True
-
-        except Exception:
-
-            return False
-
-    
