@@ -72,10 +72,4 @@ class ChatEngine:
     # "green"
     # "dark-blue"
     ctk.set_default_color_theme("blue")
-    # --------------------------------------------------
-
-    def stop(self):
-
-        self.stop_requested = True
-
-    # --------------------------------------------------
+ 
