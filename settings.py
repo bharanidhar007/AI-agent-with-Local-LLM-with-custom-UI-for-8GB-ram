@@ -93,20 +93,3 @@ class SettingsManager:
             self.save()
 
             return
-
-        try:
-
-            with open(self.file, "r", encoding="utf-8") as f:
-
-                loaded = json.load(f)
-
-                self.settings.update(loaded)
-
-        except Exception:
-
-            self.settings = DEFAULT_SETTINGS.copy()
-
-            self.save()
-
-   
-
