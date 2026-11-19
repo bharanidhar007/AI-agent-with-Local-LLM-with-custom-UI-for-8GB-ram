@@ -111,18 +111,4 @@ class HistoryManager:
 
     # --------------------------------------------------
 
-    def delete_chat(
-
-        self,
-
-        chat_id
-
-    ):
-
-        file = self.chat_file(chat_id)
-
-        if file.exists():
-
-            file.unlink()
-
-    # --------------------------------------------------
+   
