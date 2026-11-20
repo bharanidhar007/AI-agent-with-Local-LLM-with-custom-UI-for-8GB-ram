@@ -61,7 +61,3 @@ class HistoryManager:
         )
 
     # --------------------------------------------------
-
-        self.save_chat(chat_id, data)
-
-        return chat_id
