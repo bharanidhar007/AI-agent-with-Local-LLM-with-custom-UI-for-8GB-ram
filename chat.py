@@ -66,10 +66,3 @@ class ChatEngine:
     # "Dark"
     # "Light"
     ctk.set_appearance_mode("Dark")
-
-    # Themes:
-    # "blue"
-    # "green"
-    # "dark-blue"
-    ctk.set_default_color_theme("blue")
- 
