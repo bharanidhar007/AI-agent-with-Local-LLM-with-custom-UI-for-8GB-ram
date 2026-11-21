@@ -28,10 +28,3 @@ class ModelManager:
         self.current_model = DEFAULT_MODEL
 
     # --------------------------------------------------
-
-    @property
-    def url(self):
-
-        return self.host + TAGS_ENDPOINT
-
-    # --------------------------------------------------
