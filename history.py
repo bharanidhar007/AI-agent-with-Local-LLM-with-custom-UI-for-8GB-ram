@@ -89,26 +89,9 @@ class HistoryManager:
 
         chat_id
 
-    ):
+    )
 
-        file = self.chat_file(chat_id)
+    
 
-        if not file.exists():
-
-            return None
-
-        with open(
-
-            file,
-
-            "r",
-
-            encoding="utf-8"
-
-        ) as f:
-
-            return json.load(f)
-
-    # --------------------------------------------------
-
+        
    
