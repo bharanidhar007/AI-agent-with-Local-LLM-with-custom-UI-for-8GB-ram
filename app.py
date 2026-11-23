@@ -49,15 +49,3 @@ def main():
 
 
 
-class HistoryManager:
-
-    def __init__(self):
-
-        self.chat_dir = Path(CHAT_DIR)
-
-        self.chat_dir.mkdir(
-            parents=True,
-            exist_ok=True
-        )
-
-    # --------------------------------------------------
