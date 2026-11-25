@@ -61,8 +61,3 @@ class ChatEngine:
     Configure global appearance settings.
     """
 
-    # Modes:
-    # "System"
-    # "Dark"
-    # "Light"
-    ctk.set_appearance_mode("Dark")
