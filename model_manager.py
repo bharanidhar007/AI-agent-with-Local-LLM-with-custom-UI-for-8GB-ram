@@ -12,13 +12,6 @@ Handles:
 
 import requests
 
-from config import (
-    OLLAMA_HOST,
-    TAGS_ENDPOINT,
-    DEFAULT_MODEL
-)
-
-
 class ModelManager:
 
     def __init__(self):
