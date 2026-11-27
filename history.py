@@ -81,17 +81,3 @@ class HistoryManager:
 
             )
 
-    # --------------------------------------------------
-
-    def load_chat(
-
-        self,
-
-        chat_id
-
-    )
-
-    
-
-        
-   
