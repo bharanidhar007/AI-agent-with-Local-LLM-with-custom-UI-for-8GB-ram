@@ -75,11 +75,3 @@ class SettingsManager:
         self.load()
 
     # ------------------------------------------------
-
-    def load(self):
-
-        if not self.file.exists():
-
-            self.save()
-
-            return
