@@ -56,8 +56,3 @@ class ChatEngine:
         )
 
     
-    def configure_app():
-    """
-    Configure global appearance settings.
-    """
-
