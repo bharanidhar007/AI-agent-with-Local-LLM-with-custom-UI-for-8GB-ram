@@ -39,13 +39,4 @@ def main():
 
   
 
-    # ------------------------------------------------
-
-    def reset(self):
-
-        self.settings = DEFAULT_SETTINGS.copy()
-
-        self.save()
-
-
-
+   
